@@ -16,6 +16,7 @@
     "core-js": "^3.6.5",
     "element-plus": "^1.0.2-beta.55",
     "sass": "^1.35.2",
+    "vditor": "^3.8.6",
     "vue": "^3.0.0"
   },
   "devDependencies": {

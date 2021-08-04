@@ -24,3 +24,4 @@ pnpm-debug.log*
 .history
 #Electron-builder output
 /dist_electron
+.stylelintcache
