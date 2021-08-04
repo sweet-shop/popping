@@ -1,0 +1,18 @@
+#md-edit {
+    flex: 1;
+    &::v-deep .vditor-tooltipped__n::before,
+    &::v-deep .vditor-tooltipped__ne::before,
+    &::v-deep .vditor-tooltipped__nw::before {
+        top: auto;
+        bottom: -5px;
+        border-top-color: transparent;
+        border-bottom-color: #3b3e43;
+    }
+    &::v-deep .vditor-tooltipped__n::after,
+    &::v-deep .vditor-tooltipped__ne::after,
+    &::v-deep .vditor-tooltipped__nw::after {
+        top: 100%;
+        bottom: inherit;
+        margin-top: 5px;
+    }
+}

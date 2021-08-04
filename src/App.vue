@@ -1,16 +1,15 @@
 <template>
-<el-row :gutter="10" class="container">
-    <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="3">
-        <LeftMenu />
-    </el-col>
-</el-row>
+<LeftMenu />
+<MdEdit />
 </template>
 <script>
 import LeftMenu from '@component/left-menu';
+import MdEdit from '@component/md-edit';
 export default {
     name: 'App',
     components: {
-        LeftMenu
+        LeftMenu,
+        MdEdit
     }
 };
 </script>
@@ -22,14 +21,11 @@ body {
     overflow-x: hidden;
 }
 #app {
+    display: flex;
     height: 100%;
     font-family: Avenir, Helvetica, Arial, sans-serif;
-    text-align: center;
     color: #2c3e50;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    .container {
-        height: 100%;
-    }
 }
 </style>

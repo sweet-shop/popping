@@ -325,6 +325,8 @@ module.exports = {
         // 要求或禁止在 at 规则之前有空行
         "at-rule-empty-line-before": "never",
         // 在规则之前不允许空行
-        "rule-empty-line-before": "never-multi-line"
+        "rule-empty-line-before": "never-multi-line",
+        // 允许未知的伪元素选择器
+        "selector-pseudo-element-no-unknown": false
     }
 }
