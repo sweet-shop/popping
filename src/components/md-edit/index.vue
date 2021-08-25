@@ -2,8 +2,15 @@
 <script>
 import Vditor from 'vditor';
 import 'vditor/src/assets/scss/index.scss';
-export default {
+import {
+    defineComponent
+} from 'vue';
+export default defineComponent({
     name: 'mdEdit',
+    components: {},
+    data() {
+        return {};
+    },
     mounted() {
         this.contentEditor = new Vditor('md-edit',
             {
@@ -20,7 +27,10 @@ export default {
                     this.contentEditor.setValue(val);
                 }
             });
+    },
+    setup(props) {
+        console.log(props);
     }
-};
+});
 </script>
 <style src="./index.scss" lang="scss" scoped></style>
