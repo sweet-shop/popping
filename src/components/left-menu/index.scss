@@ -4,4 +4,24 @@
         height: 100%;
         border-right: none;
     }
+    .n-space {
+        height: 100%;
+        & > ::v-deep(div) {
+            height: 100%;
+            .n-layout {
+                height: 100%;
+                .n-layout-scroll-container {
+                    height: 100%;
+                    .n-layout-sider {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .n-layout-sider {
+            ::v-deep(.n-layout-toggle-bar) {
+                right: 0;
+            }
+        }
+    }
 }

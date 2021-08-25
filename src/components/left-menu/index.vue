@@ -44,7 +44,7 @@ const menuOptions = [
         icon: renderIcon(BookIcon)
     },
     {
-        label: '舞，舞，舞',
+        label: '舞，舞，舞舞，舞，舞舞，舞，舞舞，舞，舞舞，舞，舞舞，舞，舞舞，舞，舞',
         key: 'dance-dance-dance',
         icon: renderIcon(BookIcon),
         children: [
@@ -103,7 +103,7 @@ export default defineComponent({
     data() {
         return {
             activeKey: null,
-            collapsed: true,
+            collapsed: false,
             menuOptions
         };
     },
